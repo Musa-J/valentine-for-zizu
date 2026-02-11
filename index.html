@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Zizu ❤️ | My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-hearts"></div>
+    <div class="sparkles"></div>
+    
+    <!-- ========== PAGE 1 ========== -->
+    <div class="container" id="page1">
+        <!-- Title -->
+        <div class="main-title">
+            <span class="for">For</span>
+            <span class="her-name">Zizu</span>
+            <span class="heart-icon">💖</span>
+        </div>
+        
+        <!-- Subtitle -->
+        <p class="subtitle">My dearest love, my forever Wifeyyyy</p>
+        
+        <!-- The Interactive Heart Button -->
+        <div class="heart-button-container">
+            <div class="heart-wrapper">
+                <button class="heart-button" id="enterHeartBtn">
+                    <div class="heart-shape">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span class="button-text">Click to Enter My Heart</span>
+                </button>
+                
+                <!-- Pulse effect around the heart -->
+                <div class="pulse-ring ring-1"></div>
+                <div class="pulse-ring ring-2"></div>
+                <div class="pulse-ring ring-3"></div>
+            </div>
+            
+            <!-- Instruction text -->
+            <p class="instruction"><i class="fas fa-mouse-pointer"></i> Click the heart gently</p>
+        </div>
+        
+        <!-- Romantic Quote -->
+        <div class="quote">
+            <i class="fas fa-quote-left"></i>
+            <p>In all the world, there is no heart for me like yours.<br>In all the world, there is no love for you like mine.</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+    </div>
+    
+    <!-- ========== PAGE 2 ========== -->
+    <div class="container hidden" id="page2">
+        <div class="page2-content">
+            <!-- Title with animation -->
+            <div class="welcome-title">
+                <div class="title-heart">💖</div>
+                <h2>Welcome to My Heart, <span class="zizu-glow">Zizu</span>!</h2>
+                <div class="title-heart">💖</div>
+            </div>
+            
+            <!-- Romantic Message -->
+            <div class="romantic-message">
+                <p class="message-line">Every beat of my heart whispers your name...</p>
+                <p class="message-line">And now that you're here, let me show you</p>
+                <p class="message-line">just how deeply you're loved.</p>
+            </div>
+            
+            <!-- Cute Animal Holding Next Step -->
+            <div class="animal-messenger">
+                <div class="cub-holder">
+                    <div class="cub">
+                        <div class="cub-face">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                            <div class="blush left"></div>
+                            <div class="blush right"></div>
+                            <div class="smile"></div>
+                        </div>
+                        <div class="cub-ear left"></div>
+                        <div class="cub-ear right"></div>
+                    </div>
+                    <div class="cub-body">
+                        <div class="heart-envelope" id="heartEnvelope">
+                            <div class="envelope">
+                                <div class="envelope-front"></div>
+                                <div class="envelope-back"></div>
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-heart">💌</div>
+                            </div>
+                            <div class="letter hidden">
+                                <div class="letter-content">
+                                    <h3>For My Zizu 💕</h3>
+                                    <p>Our love story continues...</p>
+                                    <div class="letter-button" id="openLoveLetter">
+                                        <span>Open Our Love Story</span>
+                                        <div class="sparkle">✨</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="cub-message">Pssst! I'm holding something special for you!</p>
+            </div>
+            
+            <!-- Alternative Cute Button -->
+            <div class="cute-button-container">
+                <button class="cute-button" id="continueBtn">
+                    <span class="button-icon">🐾</span>
+                    <span class="button-text">Follow the Love Trail</span>
+                    <span class="button-sparkles">✨✨✨</span>
+                    <div class="button-hearts">
+                        <span>💖</span>
+                        <span>💕</span>
+                        <span>💗</span>
+                    </div>
+                </button>
+                <p class="button-hint"><i class="fas fa-hand-point-up"></i> Click the envelope or this button!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ========== PAGE 3 ========== -->
+    <div class="container hidden" id="page3">
+        <div class="gallery-page">
+            <!-- Title -->
+            <div class="gallery-title">
+                <h1>Our Beautiful Moments</h1>
+                <p>Click the camera to reveal our memories...</p>
+            </div>
+            
+            <!-- Camera Button -->
+            <div class="camera-container">
+                <button class="camera-button" id="cameraButton">
+                    <div class="camera-body">
+                        <div class="camera-lens"></div>
+                        <div class="camera-flash"></div>
+                        <div class="camera-button-ring"></div>
+                    </div>
+                    <span class="camera-text">Click to Reveal Photo</span>
+                </button>
+                <div class="film-strip"></div>
+            </div>
+            
+            <!-- Photo Counter -->
+            <div class="photo-counter">
+                <span class="counter-text">Photos Revealed: </span>
+                <span class="counter-number" id="photoCount">0</span>
+                <span class="counter-total">/3</span>
+            </div>
+            
+            <!-- Polaroid Photos Container -->
+            <div class="polaroid-container" id="polaroidContainer">
+                <!-- Photos will appear here dynamically -->
+            </div>
+            
+            <!-- Navigation Button -->
+            <button class="next-page-btn hidden" id="nextPageBtn">
+                <span>Continue to Love Letter →</span>
+                <div class="heart-trail">
+                    <span>💖</span>
+                    <span>💕</span>
+                    <span>💗</span>
+                </div>
+            </button>
+        </div>
+        
+        <!-- Background Decorative Elements -->
+        <div class="photo-frames-bg">
+            <div class="photo-frame frame-1"></div>
+            <div class="photo-frame frame-2"></div>
+            <div class="photo-frame frame-3"></div>
+        </div>
+    </div>
+    
+    <!-- ========== PAGE 4: LOVE LETTER ========== -->
+<div class="container hidden" id="page4">
+    <div class="letter-page">
+        <!-- Decorative Corner Hearts -->
+        <div class="corner-heart top-left">💖</div>
+        <div class="corner-heart top-right">💕</div>
+        <div class="corner-heart bottom-left">💗</div>
+        <div class="corner-heart bottom-right">💓</div>
+        
+        <!-- Wax Seal -->
+        <div class="wax-seal">
+            <div class="seal-circle"></div>
+            <div class="seal-heart">💖</div>
+            <div class="seal-glare"></div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p class="scroll-text">Scroll to read the letter</p>
+            <div class="arrow-down">↓</div>
+        </div>
+        
+        <!-- Letter Paper (Scrollable) -->
+        <div class="letter-paper scrollable">
+            <div class="paper-texture"></div>
+            
+            <!-- Letter Header -->
+            <div class="letter-header">
+                <h1 class="letter-title">To My Dearest Zizu</h1>
+                <div class="letter-date">
+                    <span class="date-text">Valentine's Day 2026</span>
+                    <span class="date-heart">❤️</span>
+                </div>
+            </div>
+            
+            <!-- Letter Content -->
+            <div class="letter-content-container">
+                <div class="letter-line line-1">
+                    <span class="greeting">My Love,</span>
+                </div>
+                
+                <div class="letter-line line-2">
+                    As I sit here thinking of you, my heart overflows with emotions
+                </div>
+                
+                <div class="letter-line line-3">
+                    that no words can fully convey. But let me try...
+                </div>
+                
+                <div class="letter-line line-4">
+                    From the moment you came into my life, everything changed.
+                </div>
+                
+                <div class="letter-line line-5">
+                    The colors became brighter, laughter became sweeter,
+                </div>
+                
+                <div class="letter-line line-6">
+                    and every moment became a soothing memory.
+                </div>
+                
+                <div class="letter-line line-7">
+                    I love the way your eyes light up when you smile,
+                </div>
+                
+                <div class="letter-line line-8">
+                    the sound of your laughter that fills my heart with joy,
+                </div>
+                
+                <div class="letter-line line-9">
+                    and the way you make even ordinary days feel magical.
+                </div>
+                
+                <div class="letter-line line-10">
+                    You are my favorite Good moring and my hardest Boii Boii.
+                </div>
+                
+                <div class="letter-line line-11">
+                    My safe place, my adventure, my everything.
+                </div>
+                
+                <div class="letter-line line-12">
+                    Today and every day, I choose you. I will always choose you.
+                </div>
+                
+                <div class="letter-line line-13">
+                    Thank you for being you, for loving me,
+                </div>
+                
+                <div class="letter-line line-14">
+                    and for making my life complete.
+                </div>
+                
+                <!-- Additional content for scrolling -->
+                <div class="letter-line line-15">
+                    I feel so  blessed that i have you 
+                </div>
+                
+                <div class="letter-line line-16">
+                    Your eyes....uffffff..shi kha tha slow killer hian
+                </div>
+                
+                <div class="letter-line line-17">
+                    Every moment with you feels like a beautiful dream.
+                </div>
+                
+                <div class="letter-line line-18">
+                    Your smile is my favorite sight in the world.
+                </div>
+                
+                <div class="letter-line line-19">
+                    Your laughter is the most beautiful music to my ears.
+                </div>
+                
+                <div class="letter-line line-20">
+                    Your touch makes everything feel right.
+                </div>
+                
+                <div class="letter-line line-21">
+                    I promise to always be there for you, through everything!
+                </div>
+                
+                <div class="letter-line line-22">
+                    To support your dreams and celebrate your successes.
+                </div>
+                
+                <div class="letter-line line-23">
+                    To hold your hand when you're scared.
+                </div>
+                
+                <div class="letter-line line-24">
+                    To wipe your tears when you're sad.
+                </div>
+                
+                <div class="letter-line line-25">
+                    And to make you laugh every single day.
+                </div>
+                
+                <div class="letter-line line-26">
+                    You are the reason I believe in forever.
+                </div>
+                
+                <div class="letter-line line-27">
+                    The reason I look forward to tomorrow.
+                </div>
+                
+                <div class="letter-line line-28">
+                    And the greatest blessing in my life.
+                </div>
+                
+                <div class="letter-signature">
+                    <div class="signature-line"></div>
+                    <div class="signature-name">Forever Yours,</div>
+                    <div class="signature-text">Bitanem</div>
+                    <div class="signature-heart">💘</div>
+                </div>
+            </div>
+            
+            <!-- End of Letter Marker -->
+            <div class="end-marker">
+                <div class="end-line"></div>
+                <div class="end-text">The End 💕</div>
+                <div class="end-line"></div>
+            </div>
+            
+            <!-- Floating Hearts in Letter -->
+            <div class="floating-letter-hearts">
+                <div class="floating-heart">💖</div>
+                <div class="floating-heart">💕</div>
+                <div class="floating-heart">💗</div>
+                <div class="floating-heart">💓</div>
+                <div class="floating-heart">💞</div>
+            </div>
+        </div>
+        
+        <!-- Interactive Elements -->
+        <div class="letter-interactions">
+            <button class="read-aloud-btn" id="readAloudBtn">
+                <i class="fas fa-volume-up"></i>
+                <span>Voice Note for You</span>
+            </button>
+            
+            <button class="next-btn" id="finalPageBtn">
+                <span>Reason I Love You</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            
+            <button class="scroll-to-top-btn" id="scrollToTopBtn">
+                <i class="fas fa-arrow-up"></i>
+                <span>Back to Top</span>
+            </button>
+        </div>
+        
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <!-- Ink Blot Decoration -->
+        <div class="ink-blot ink-1"></div>
+        <div class="ink-blot ink-2"></div>
+    </div>
+</div>
+
+<!-- ========== PAGE 5: HOW IT ALL STARTED ========== -->
+<div class="container hidden" id="page5">
+    <div class="video-page">
+        <!-- Title -->
+        <div class="video-title-container">
+            <h1 class="video-title">
+                <span class="title-part">How It All Started</span>
+                <div class="title-hearts">
+                    <span>🎬</span>
+                    <span>💕</span>
+                    <span>🎥</span>
+                </div>
+            </h1>
+            <p class="video-subtitle">Click the play button to watch our story unfold...</p>
+        </div>
+        
+        <!-- Video Player Container -->
+        <div class="video-player-container">
+            <!-- Film Reel Decoration -->
+            <div class="film-reel left-reel">
+                <div class="reel-core"></div>
+                <div class="reel-hole"></div>
+            </div>
+            <div class="film-reel right-reel">
+                <div class="reel-core"></div>
+                <div class="reel-hole"></div>
+            </div>
+            
+            <!-- Video Player -->
+            <div class="video-player" id="videoPlayer">
+                <!-- Black Overlay -->
+                <div class="video-overlay" id="videoOverlay">
+                    <div class="play-button-container">
+                        <button class="play-button" id="playVideoBtn">
+                            <div class="play-triangle"></div>
+                            <div class="play-circle"></div>
+                            <div class="play-ring"></div>
+                        </button>
+                        <p class="play-text">Click to Play Our Story</p>
+                        <p class="hint-text"><i class="fas fa-volume-up"></i> Make sure sound is on!</p>
+                    </div>
+                </div>
+                
+                <!-- Video Element -->
+                <video class="our-video" id="ourVideo" preload="metadata" playsinline>
+                    <source src="assets/video/Valentine video.mp4" type="video/mp4">
+                    <source src="assets/video/our-story.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Video Controls (hidden by default) -->
+                <div class="custom-controls hidden" id="customControls">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="videoProgressBar"></div>
+                        <div class="progress-thumb" id="videoProgressThumb"></div>
+                    </div>
+                    
+                    <div class="controls-bottom">
+                        <div class="left-controls">
+                            <button class="control-btn play-pause-btn" id="videoPlayPause">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="center-controls">
+                            <button class="control-btn volume-btn" id="volumeBtn">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+                        </div>
+                        
+                        <div class="right-controls">
+                            <button class="control-btn fullscreen-btn" id="fullscreenBtn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Film Strip Effect -->
+            <div class="film-strip-effect"></div>
+        </div>
+        
+        <!-- Video Description -->
+        <div class="video-description">
+            <div class="description-content">
+                <h3><i class="fas fa-heart"></i> Our Beautiful Journey</h3>
+                <p>This video captures the magical moments that brought us together. Every frame is a memory, every second is a story.</p>
+                <div class="video-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>Duration: <span id="videoDuration">1:30</span></span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-calendar"></i>
+                        <span>Created: Valentine's Day 2026</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-film"></i>
+                        <span>Quality: 1080p HD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="video-navigation">
+            <button class="nav-btn prev-btn" id="videoPrevBtn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Letter</span>
+            </button>
+            
+            <div class="watch-counter">
+                <i class="fas fa-eye"></i>
+                <span>Times watched: <span id="watchCount">0</span></span>
+            </div>
+            
+            <button class="nav-btn next-btn" id="videoNextBtn">
+                <span>Final Question</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="video-bg-clapboard">
+            <div class="clapboard-top"></div>
+            <div class="clapboard-text">SCENE: OUR LOVE STORY</div>
+        </div>
+        
+        <div class="video-bg-lights">
+            <div class="light-beam"></div>
+            <div class="light-beam"></div>
+            <div class="light-beam"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ========== PAGE 7: WHY I LOVE YOU ========== -->
+<div class="container hidden" id="page7">
+    <div class="reasons-page">
+        <!-- Title with floating hearts -->
+        <div class="reasons-header">
+            <h1 class="reasons-title">
+                <span class="title-part-1">Why I Love</span>
+                <span class="title-name">Zizu</span>
+                <div class="title-hearts">
+                    <span class="heart-float">💖</span>
+                    <span class="heart-float">💕</span>
+                    <span class="heart-float">💗</span>
+                </div>
+            </h1>
+            <p class="reasons-subtitle">Click the hearts to discover all the reasons...</p>
+        </div>
+        
+        <!-- Category Selection -->
+        <div class="categories-container">
+            <div class="category active" data-category="all">
+                <div class="category-icon">💝</div>
+                <span class="category-name">All Reasons</span>
+                <span class="category-count">100+</span>
+            </div>
+            <div class="category" data-category="personality">
+                <div class="category-icon">✨</div>
+                <span class="category-name">Your Personality</span>
+                <span class="category-count">25</span>
+            </div>
+            <div class="category" data-category="looks">
+                <div class="category-icon">😍</div>
+                <span class="category-name">Your Beauty</span>
+                <span class="category-count">20</span>
+            </div>
+            <div class="category" data-category="moments">
+                <div class="category-icon">🌟</div>
+                <span class="category-name">Special Moments</span>
+                <span class="category-count">30</span>
+            </div>
+            <div class="category" data-category="future">
+                <div class="category-icon">🚀</div>
+                <span class="category-name">Our Future</span>
+                <span class="category-count">15</span>
+            </div>
+        </div>
+        
+        <!-- Reasons Grid -->
+        <div class="reasons-grid" id="reasonsGrid">
+            <!-- Reasons will be dynamically added here -->
+        </div>
+        
+        <!-- Interactive Heart to Reveal More -->
+        <div class="reveal-heart-container">
+            <div class="reveal-heart" id="revealHeart">
+                <div class="heart-pulse"></div>
+                <div class="heart-core">💖</div>
+                <div class="reveal-text">Click for More Reasons</div>
+            </div>
+            <div class="counter-display">
+                <span class="counter-text">Reasons Revealed:</span>
+                <span class="counter-number" id="reasonsCount">0</span>
+                <span class="counter-total">/ 100</span>
+            </div>
+        </div>
+        
+        <!-- Love Meter -->
+        <div class="love-meter-container">
+            <div class="love-meter">
+                <div class="meter-title">My Love for You:</div>
+                <div class="meter-bar">
+                    <div class="meter-fill" id="loveMeterFill"></div>
+                    <div class="meter-text" id="loveMeterText">Infinite 💖</div>
+                </div>
+                <div class="meter-labels">
+                    <span>Like</span>
+                    <span>Love</span>
+                    <span>Adore</span>
+                    <span>Obsessed</span>
+                    <span>Infinite</span>
+                </div>
+            </div>
+        </div>
+        
+       <!-- Secret Message Reveal -->
+<div class="secret-container">
+    <div class="secret-lock">🔒</div>
+    <div class="secret-message hidden" id="secretMessage">
+        <h3>My Biggest Reason:</h3>
+        <p class="secret-text" id="secretText">You're not just my love, you're my home. Wherever you are, that's where I belong.</p>
+        <div class="secret-heart">💘</div>
+    </div>
+    <button class="secret-btn" id="secretBtn">
+        <i class="fas fa-lock"></i>
+        <span>Reveal My Biggest Reason</span>
+    </button>
+</div>
+        
+        <!-- Navigation -->
+        <div class="reasons-navigation">
+            <button class="nav-btn prev-btn" id="prevPageBtn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Letter</span>
+            </button>
+            <button class="nav-btn next-btn" id="nextToPage8">
+                <span>How it Started</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="reasons-bg-hearts"></div>
+        <div class="floating-reasons"></div>
+    </div>
+</div>
+<!-- ========== PAGE 8: VALENTINE'S PROPOSAL ========== -->
+<div class="container hidden" id="page8">
+    <div class="proposal-page scrollable">
+        <!-- Background Glitter Effect -->
+        <div class="glitter-effect"></div>
+        
+        <!-- Title -->
+        <div class="proposal-header">
+            <h1 class="proposal-title">
+                <span class="title-line-1">Now that you've seen</span>
+                <span class="title-line-2">what's in my heart...</span>
+            </h1>
+            <div class="title-hearts">
+                <span>❤️</span>
+                <span>💕</span>
+                <span>💖</span>
+                <span>💗</span>
+                <span>💚</span>
+            </div>
+        </div>
+        
+        <!-- Intro Text -->
+        <div class="proposal-intro">
+            <p class="intro-text">
+                I have one final question for you, my love.<br>
+                The most important question of them all...
+            </p>
+            <div class="intro-sparkle">✨</div>
+        </div>
+        
+        <!-- Proposal Box -->
+        <div class="proposal-box-container">
+            <div class="proposal-box">
+                <!-- Box Decoration -->
+                <div class="box-ribbon"></div>
+                <div class="box-bow"></div>
+                
+                <!-- Question -->
+                <div class="question-content">
+                    <h2 class="question-text">
+                        <span class="question-line">Will you be</span>
+                        <span class="question-highlight">my Valentine?</span>
+                    </h2>
+                    <div class="question-heart">💘</div>
+                </div>
+                
+                <!-- YES Button Only -->
+                <div class="options-container">
+                    <button class="option-btn yes-btn" id="yesBtn">
+                        <span class="btn-text">YES!</span>
+                        <span class="btn-hearts">
+                            <span>❤️</span>
+                            <span>💋</span>
+                            <span>💖</span>
+                        </span>
+                        <div class="btn-sparkles">
+                            <span>✨</span>
+                            <span>🌟</span>
+                            <span>⭐</span>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Box Shadow Effect -->
+                <div class="box-shadow"></div>
+            </div>
+        </div>
+        
+        <!-- Romantic Message -->
+        <div class="proposal-message">
+            <p class="message-text">
+                You are the reason my heart beats,<br>
+                the smile on my face, and the love of my life.
+            </p>
+            <div class="message-hearts">
+                <span>💖</span>
+                <span>💕</span>
+                <span>💗</span>
+                <span>💓</span>
+                <span>💞</span>
+            </div>
+        </div>
+        
+        <!-- Hidden Success Message (Shows when YES is clicked) -->
+        <div class="success-message hidden" id="successMessage">
+            <div class="success-content">
+                <div class="success-heart-explosion">
+                    <div class="heart-burst">💖</div>
+                    <div class="heart-burst">💕</div>
+                    <div class="heart-burst">💗</div>
+                    <div class="heart-burst">💓</div>
+                    <div class="heart-burst">💞</div>
+                </div>
+                <h2 class="success-title">YES! 💖</h2>
+                <p class="success-text">
+                    You've made me the happiest person in the world!<br>
+                    I love you more than words can say, Zizu.
+                </p>
+                <div class="success-countdown">
+                    <div class="countdown-text">Our journey continues in...</div>
+                    <div class="countdown-timer" id="countdownTimer">5</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="proposal-navigation">
+            <button class="nav-btn back-btn" id="proposalBackBtn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Video</span>
+            </button>
+        </div>
+        
+        <!-- Floating Hearts Background -->
+        <div class="proposal-bg-hearts"></div>
+    </div>
+</div>
+    
+    <!-- Audio Elements -->
+    <audio id="bgMusic" loop>
+        <source src="assets/sound/background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="heartSound">
+        <source src="assets/sound/hearbeat.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="magicSound">
+        <source src="assets/sound/magic-chime.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Custom Audio for Letter -->
+<audio id="customLetterAudio" preload="auto">
+    <source src="assets/audio/my-audio.mp4" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+</body>
+</html>
